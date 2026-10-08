@@ -63,3 +63,6 @@ Make the script executable:
 chmod +x disable_piholes.sh
 ```
 *How to verify:* Run `./disable_piholes.sh` and verify via your Pi-hole web interfaces that both instances pause successfully.
+
+## Use Case
+This script is ideal for situations where you receive an email containing a link that routes through tracking or redirection services which you normally prefer to block for privacy and security. Because you do not want to permanently add these domains to your whitelist, but exceptionally need them to resolve so you can access the link, you can simply run this script from your terminal to pause your Pi-holes instantly without having to manually log into their admin web panels.
